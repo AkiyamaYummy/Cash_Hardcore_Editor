@@ -1,0 +1,17 @@
+body{
+    background: lightgray;
+    margin: 0;
+}
+#main-top-panel{
+    width: 100%;
+    height: 40px;
+    background: black;
+    position: fixed;
+    top: 0;
+}
+.main-title{
+     float: right;
+     color: white;
+     margin-right: 20px;
+     margin-top: 10px;
+ }

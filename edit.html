@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>笔记编辑</title>
+</head>
+<body onload="bodyOnload()">
+    <div id="page-panel">
+        <div id="page1"></div>
+        <div id="page2"></div>
+    </div>
+    <div id="main-top-panel">
+        <div class="main-title">$NEU \infty NOTE$</div>
+        <button class="top-panel-button">笔记文件</button>
+        <button class="top-panel-button">编辑模式</button>
+        <button class="top-panel-button">保存</button>
+    </div>
+    <script type="application/javascript" src="JS/NeuNoteCoreModule.js"></script>
+    <script type="application/javascript" src="JS/jquery.js"></script>
+    <script type="application/javascript" src="JS/nodeeditpage.js"></script>
+    <script>
+        function bodyOnload(){
+            pageEdit.initEditPage($("#page1"),{});
+            pageEdit.initEditPage($("#page2"),{});
+            setMainEdit();
+        }
+    </script>
+    <link rel="stylesheet" href="CSS/nodeeditpage.css">
+</body>
+</html>
